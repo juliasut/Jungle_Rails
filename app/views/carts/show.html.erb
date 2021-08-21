@@ -1,7 +1,9 @@
 <section class="cart-show">
   <% if enhanced_cart.empty? %>
+  <div class="alert alert-danger">
   <h1>Your cart is empty. Ready to fill it?</h1>
   <h3><%= link_to "Click here", "/products"%></h3>
+  </div>
   <% else %>
   <header class="page-header">
     <h1>My Cart</h1>
@@ -52,5 +54,5 @@
     </div>
   </div>
 
-</section>
 <% end %>
+</section>
