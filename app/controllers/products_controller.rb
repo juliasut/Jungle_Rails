@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
 
   def index
+    puts "users products ----------------------------"
     @products = Product.all.order(created_at: :desc)
   end
 
