@@ -15,7 +15,7 @@ RSpec.feature "AddToCarts", type: :feature, js: true do
     end
   end
 
-  scenario "User can add things to cart" do
+  scenario "User can add products to cart" do
       # ACT
       visit root_path
       first('button.btn-primary').click
